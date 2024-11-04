@@ -1,10 +1,31 @@
 <html>
-	<body>
-		<script language="javascript" type="text/javascript">
-			var a=5
-			var b=10
-			var sum=a+b
-			document.write("the sum is ",sum)
-		</script>
-	</body>
-<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Two Numbers</title>
+</head>
+<body>
+    <form id="addForm">
+        <label for="firstValue">Enter the first number:</label>
+        <input type="number" id="firstValue" required><br>
+        
+        <label for="secondValue">Enter the second number:</label>
+        <input type="number" id="secondValue" required><br>
+        
+        <button type="submit">Add</button>
+    </form>
+
+    <script>
+        document.getElementById('addForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting
+            
+            let num1 = parseFloat(document.getElementById('firstValue').value);
+            let num2 = parseFloat(document.getElementById('secondValue').value);
+            
+            let sum = num1 + num2;
+            
+            alert("The sum of " + num1 + " and " + num2 + " is " + sum + ".");
+        });
+    </script>
+</body>
+</html>
