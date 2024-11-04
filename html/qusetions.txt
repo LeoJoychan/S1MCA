@@ -1,0 +1,129 @@
+
+Cycle 1 :
+
+
+1. Create HTML program with basic tags ;
+Titled MBITS COLLEGE (Must include  2 Paragraph
+,Image ,Link to Mbits website , Line Breaks ,Comments ,Headings ,background-color
+and formatting elements and Alignment tags )
+
+
+2. Program to depict RGB Colour.
+
+
+3. Program to show Un-Ordered List (
+Bridge Course Subject)  and Ordered List (
+Students with Roll Number )
+
+
+4. Create a table Showing student
+Marksheet  with Name ,  10th and UG marksheet .
+
+
+5. Create a HTML file to link different
+HTML page which contain Images ,Tables and Link within a page .
+
+
+6. Create HTML Program with a drop Down
+List  containing web -programming
+languages.
+
+
+7. Create HTML program with Checkbox
+containing list of certificates submitted .
+
+
+8. Create HTML program a  basic form containing First Name ,Last Name
+and Submit Button .
+
+
+9. Create  a Frameset HTML  program with 
+4 (different colored  ) frames
+
+
+1)Menu -Listing Link to
+different frames
+
+
+2)Titled Frame  -“Welcome to MBITS” .
+
+
+3)Descriptive Frame
+-About MBITS.
+
+
+4)Frame showing
+Photo
+Gallery
+
+(use Minimum 3
+Frameset  Attributes)
+
+
+10. Create  a Species Frameset HTML  program with 
+
+
+
+     Menu -Listing Link to different
+Animal  species .
+
+
+2)Image Frame
+
+
+3)Descriptive Frame .
+
+
+4)Photo Gallery
+
+
+(use Minimum 3
+Frameset  Attributes) .
+
+
+
+
+
+ 
+
+
+11.Design a webpage with
+Frameset .One frame is designed as a  Registeration Form and other as List .
+
+
+12. Analyze
+CSS by applying different style using Inline, External and Internal style sheet
+in HTML.
+
+
+13.Create a HTML page
+with different types of frames such as Floating Frame ,Navigation Frame and
+Mixed Frame .
+
+
+14. Create a Registration
+form using HTML .
+
+
+15. Create an HTML page
+to explain the use of various Predefined Function
+string and Math object in
+JavaScript .
+
+16. Generate a calendar using Javascript code by
+getting year from user
+
+17.Create an HTML Registeration form and
+validate the form using Javascript code.
+
+18. create an HTML page to change the
+Background colour for every click of a button
+using JavaScript event Handling .
+
+19. create an HTML page to display a new image
+and text when the mouse comes over the existing
+content in the page using JavaScript Event
+Handling .
+
+20. Create an HTML page to show online exam
+using JavaScript .
