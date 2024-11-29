@@ -1,0 +1,68 @@
+mysql> CREATE DATABASE studentdb;
+Query OK, 1 row affected (0.26 sec)
+
+mysql> USE studentdb
+Database changed
+
+mysql> CREATE TABLE student(id INT PRIMARY KEY,name VARCHAR(20),age INT,grade VARCHAR(10));
+Query OK, 0 rows affected (0.64 sec)
+
+mysql> INSERT INTO student(id,name,age,grade)VALUES(1,'Leo',21,'B');
+Query OK, 1 row affected (0.12 sec)
+
+mysql> INSERT INTO student(id,name,age,grade)VALUES(2,'Jithu',22,'B');
+Query OK, 1 row affected (0.12 sec)
+
+mysql> INSERT INTO student(id,name,age,grade)VALUES(3,'Eldho',21,'A');
+Query OK, 1 row affected (0.15 sec)
+
+mysql> INSERT INTO student(id,name,age,grade)VALUES(4,'Lijo',19,'A');
+Query OK, 1 row affected (0.09 sec)
+
+mysql> INSERT INTO student(id,name,age,grade)VALUES(18,'John',19,'C');
+Query OK, 1 row affected (0.07 sec)
+
+mysql> SELECT name FROM student WHERE age>20;
++-------+
+| name  |
++-------+
+| Leo   |
+| Jithu |
+| Eldho |
++-------+
+3 rows in set (0.00 sec)
+
+mysql> UPDATE student SET grade='A' WHERE name='Jithu';
+Query OK, 1 row affected (0.11 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> SELECT * FROM student;
++----+-------+------+-------+
+| id | name  | age  | grade |
++----+-------+------+-------+
+|  1 | Leo   |   21 | B     |
+|  2 | Jithu |   22 | A     |
+|  3 | Eldho |   21 | A     |
+|  4 | Lijo  |   19 | A     |
+| 18 | John  |   19 | C     |
++----+-------+------+-------+
+5 rows in set (0.00 sec)
+
+mysql> DELETE FROM student WHERE name='John';
+Query OK, 1 row affected (0.10 sec)
+
+mysql> SELECT * FROM student;
++----+-------+------+-------+
+| id | name  | age  | grade |
++----+-------+------+-------+
+|  1 | Leo   |   21 | B     |
+|  2 | Jithu |   22 | A     |
+|  3 | Eldho |   21 | A     |
+|  4 | Lijo  |   19 | A     |
++----+-------+------+-------+
+4 rows in set (0.00 sec)
+
+mysql> TRUNCATE TABLE student;
+Query OK, 0 rows affected (0.71 sec)
+
+

@@ -1,0 +1,8 @@
+mysql> CREATE DATABASE library_DB;
+Query OK, 1 row affected (0.15 sec)
+
+mysql> USE library_DB
+Database changed
+
+mysql> CREATE TABLE book(book_id INT,title VARCHAR(50),author VARCHAR(50),published_year INT);
+Query OK, 0 rows affected (3.72 sec)
