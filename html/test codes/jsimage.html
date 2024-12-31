@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Image and Text Change on Hover</title>
+        <style>
+            .container{
+                text-align: center;
+            }
+            img {
+                width: 400px; height: 200px; border-radius: 10px;
+                transition: transform 0.3s ease;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img id="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdfrT8Vjk9QJrwwSwwBUzizJ2vPTiZ9Y6lcA&s" alt="Hover Image"    onmouseover="changeContent()" onmouseout="resetContent()" />
+            <div id="text" class="text">Hover over the image to see the change!</div>
+        </div>
+        <script>
+            function changeContent() {
+                const img = document.getElementById("image");
+                const text = document.getElementById("text");
+                img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk7nMNeTzic_jfQHxc-38a7d7LWKc9Znqw0TCggE0c5c1WNz3-GIKTggg3Ndjmm5rKX1o&usqp=CAU"; 
+                text.textContent = "You hovered over the image!"; text.style.color = "#FF5733";
+            }
+            function resetContent() {
+                const img = document.getElementById("image"); 
+                const text = document.getElementById("text"); 
+                img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWCVnMftmnJZ8Nis5HnBeuahDMftylU9guag&s"; 
+                text.textContent = "Hover over the image to see the change!"; text.style.color = "#333";
+            }
+        </script>
+    </body>
+</html>

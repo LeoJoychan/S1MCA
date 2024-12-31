@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <style>
+            .box
+            {
+                border:1px solid black;
+                height: 370px;
+                width: 350px;
+                background-color: rgb(169, 233, 233);
+                margin-left: 40%;
+                margin-top: 4%;
+                border-radius: 8px;
+                padding-top: 5%;
+                box-shadow: 1px 4px 8px rgba(0, 0, 0.1);
+            }
+            .error
+            {
+                color: red;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <center>
+        <form id="regForm">
+            <label style="margin-right: 28%;">Username:</label><br>
+            <input type="text" id="name"><br><br>
+            <label  style="margin-right:35%">Email:</label><br>
+            <input type="email" id="email"><br><br>
+            <label  style="margin-right:29%">password:</label><br>
+            <input type="password" id="password"><br><br>
+            <label  style="margin-right:12%">Conform password:</label><br>
+            <input type="password" id="conformPassword"><br><br>
+            <input type="submit">
+        </form>
+        <div id="error" class="error"></div>
+    </center>
+    </div>
+    <script>
+        document.getElementById("regForm").addEventListener("submit",function()
+        {
+            event.preventDefault();
+            var uname=document.getElementById("name").value;
+            var email=document.getElementById("email").value;
+            var password=document.getElementById("password").value;
+            var conformPassword=document.getElementById("conformPassword").value;
+            errorMessage=document.getElementById("error");
+            errorMessage.innerHTML="";
+            if(password!=conformPassword)
+            {
+                errorMessage.innerHTML="Password dosent match";
+            }
+            else if(password.length<8)
+            {
+                errorMessage.innerHTML="Password should have atleast 8 characters";
+            }
+            else
+            {
+                alert("Reistration successful");
+            }
+        });
+    </script>
+    </body>
+</html>
